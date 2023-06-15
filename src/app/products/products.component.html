@@ -1,0 +1,17 @@
+<div *ngFor="let p of products">
+    <div class="product-container row">
+        <div class="image-container col-md-2"><img [src]="p.image" alt="" style="height: 90px; width: 90px; object-fit: cover;"></div>
+        <div class="col-md-7">
+            <div class="name-container"><h6>{{p.name}}</h6></div>
+            <div class="detailContainer">
+                <div class="details me-4 " [ngStyle]="{color: p.available ==='Mavjud'? 'Green':'Red'}">{{p.available}}</div>
+                <div class="details me-4"><b>Narxi:</b>{{p.price}}So`m</div>
+                <div class="details"><b>Sifati:</b>{{p.color}}</div>
+            </div>
+        </div>
+        <div class="options col-md-3 content">
+             <button type="button" class="btn btn-success me-2"(click)="openModal(p.batafsil, p.nomi)">Batafsil</button>
+             <button class="btn btn-warning">Xarid qilish</button>
+        </div>
+    </div>
+</div>

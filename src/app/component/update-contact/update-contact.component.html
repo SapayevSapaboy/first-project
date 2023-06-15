@@ -1,0 +1,44 @@
+<div class="container py-3">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <h5>Update Contact</h5>
+        <div class="row">
+          <form>
+            <div class="form-group mb-1">
+              <label for="exampleInputEmail1">F.I.SH</label>
+              <input type="text" [(ngModel)]="contactdata.firstname" name="firstname" class="form-control"
+                placeholder="F.I.SH">
+            </div>
+            <div class="form-group mb-1">
+              <label for="exampleInputEmail1">Data</label>
+              <input type="date" [(ngModel)]="contactdata.data" name="date" class="form-control" placeholder="Data">
+            </div>
+            <div class="form-group mb-1">
+              <label for="exampleInputEmail1">Mahallasi</label>
+              <input type="text" [(ngModel)]="contactdata.lastname" name="lastname" class="form-control"
+                placeholder="Mahallasi">
+            </div>
+            <div class="form-group mb-1">
+              <label for="exampleInputEmail1">Tel.nomer</label>
+              <input type="number" [(ngModel)]="contactdata.phonenumber" name="phonenumber" class="form-control"
+                placeholder="Tel.nomer">
+            </div>
+            <div class="form-group mb-1">
+              <label for="exampleInputEmail1">Manzil</label>
+              <input type="text" [(ngModel)]="contactdata.city" name="city" class="form-control" placeholder="Manzil">
+            </div>
+            <div class="form-group mb-1">
+              <label for="exampleInputEmail1" class="form-label">Photo</label>
+              <input class="form-control" type="file" id="formFile" accept=".png, .jpg, .jpeg">
+            </div>
+            <div class="text-center mt-2">
+              <button type="submit" (click)="update()" class="btn btn-primary">Update</button>&nbsp;
+              <button type="submit" routerLink="/contactlist" class="btn btn-success">Back</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

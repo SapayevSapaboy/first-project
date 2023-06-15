@@ -1,0 +1,23 @@
+<div class="container py-2">
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="col-sm-2">
+           <img alt="" class="constant img-big" src="./assets/products/avatar.jpg" style="height: 150px; width: 150px; object-fit: cover;">    
+        </div>
+         <div class="col-sm-7">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item list-group-item-primary">F.I.SH:<span class="fw-bold">{{contact?.firstname }}</span></li>
+                <li class="list-group-item list-group-item list-group-item-primary">Data:<span class="fw-bold">{{contact?.data}}</span></li>
+                <li class="list-group-item list-group-item list-group-item-primary">Mahallasi:<span class="fw-bold">{{contact?.lastname}}</span></li>
+                <li class="list-group-item list-group-item list-group-item-primary">Tel.nomer:<span class="fw-bold">{{contact?.phonenumber}}</span></li>
+                <li class="list-group-item list-group-item list-group-item-primary">Manzil:<span class="fw-bold">{{contact?.city}}</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col">
+            <a class="btn btn-danger" routerLink="/contactlist">
+                <i class="bi bi-arrow-left-circle"></i>Orqaga
+            </a>
+        </div>
+    </div>
+</div>

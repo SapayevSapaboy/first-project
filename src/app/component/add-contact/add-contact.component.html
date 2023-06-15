@@ -1,0 +1,42 @@
+<div class="container py-3">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <h5>Add Contact</h5>
+        <div class="row">
+          <form [formGroup]="contactform">
+            <div class="form-group mb-1">
+              <label for="exampleInputEmail1">F.I.SH</label>
+              <input type="text" class="form-control" formControlName="firstname" placeholder="F.I.SH">
+            </div>
+            <div class="form-group mb-1">
+              <label for="exampleInputEmail1">Data</label>
+              <input type="date" class="form-control" formControlName="data" placeholder="Data">
+            </div>
+            <div class="form-group mb-1">
+              <label for="exampleInputEmail1">Mahallasi</label>
+              <input type="text" class="form-control" formControlName="lastname" placeholder="Mahallasi">
+            </div>
+            <div class="form-group mb-1">
+              <label for="exampleInputEmail1">Tel.nomer</label>
+              <input type="number" class="form-control" formControlName="phonenumber" placeholder="Tel.nomer">
+            </div>
+            <div class="form-group mb-1">
+              <label for="exampleInputEmail1">Manzil</label>
+              <input type="text" class="form-control" formControlName="city" placeholder="Manzil">
+            </div>
+            <div class="form-group mb-1">
+              <label for="formFile" class="form-label">Photo</label>
+              <input class="form-control" type="file" id="formFile" accept=".png, .jpg, .jpeg">
+            </div>
+            <div class="text-center mt-2">
+              <button type="submit" (click)="submitcontact(this.contactform.value)"
+                class="btn btn-primary">Submit</button>&nbsp;
+              <button type="submit" routerLink="/contactlist" class="btn btn-success">Back</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

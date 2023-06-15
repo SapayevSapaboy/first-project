@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "firstname": "Sapayev Sapaboy ",
+      "data": "2023-06-09",
+      "lastname": "Lolazoar mahallasi Olmazor 15",
+      "phonenumber": 998934742715,
+      "city": "Хоразм вилояти Хива шахри ",
+      "id": 12
+    },
+    {
+      "firstname": "Садуллаев Даврон",
+      "data": "1991-06-13",
+      "lastname": "Дустлик махалласи",
+      "phonenumber": 998906497577,
+      "city": "Хоразм вилояти Хива шахри",
+      "id": 13
+    },
+    {
+      "firstname": "Ўктамбой Рашидов",
+      "data": "2023-06-16",
+      "lastname": "Бўстонлик маҳалласи ",
+      "phonenumber": 998945685247,
+      "city": "Урганч шаҳар",
+      "id": 14
+    },
+    {
+      "firstname": "Ro`zmetov Sarvar",
+      "data": "2014-06-17",
+      "lastname": "Ichan qal`a mahallasi",
+      "phonenumber": 998974589770,
+      "city": "Xiva shahar",
+      "id": 15
+    },
+    {
+      "firstname": "Niyazmetov Xushnud",
+      "data": "2007-05-22",
+      "lastname": "Badirxon mahallasi",
+      "phonenumber": 998995741524,
+      "city": "Xiva shahar",
+      "id": 16
+    },
+    {
+      "firstname": "Palvonov Dilmurod",
+      "data": "1992-07-25",
+      "lastname": "Sangar mahallasi",
+      "phonenumber": 998935241257,
+      "city": "Xiva shahar",
+      "id": 17
+    },
+    {
+      "firstname": "",
+      "data": "",
+      "lastname": "",
+      "phonenumber": "",
+      "city": "",
+      "id": 18
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

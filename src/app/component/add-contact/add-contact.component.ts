@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { ApiService } from 'src/app/api.service';
 import { contact } from '../contactmodel';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-add-contact',
@@ -11,7 +12,7 @@ import { contact } from '../contactmodel';
 })
 export class AddContactComponent implements OnInit {
   contactform: FormGroup | any;
-  constructor(private formbuilder:FormBuilder,private router:Router,private api:ApiService){}
+  constructor(private formbuilder:FormBuilder,private router:Router,private api:ApiService, private http: HttpClient){}
   ngOnInit(): void {
     this.contactform=this.formbuilder.group({
       firstname:['',Validators.required],
